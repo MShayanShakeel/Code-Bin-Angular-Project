@@ -1,0 +1,60 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #60a3bc;
+}
+
+.form-wrapper {
+  width: 45%;
+  padding: 20px;
+  margin: 1rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f39c12;
+}
+
+.form-wrapper h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.form-wrapper textarea {
+  background-color: #000d54;
+}
+.form-wrapper textarea::placeholder {
+  color: white;
+}
+.form-wrapper textarea:focus {
+  color: #ffffff;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+  width: 100%;
+  padding: 1rem 0px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-wrapper button:hover {
+  background-color: #0056b3;
+}
+.forpassandtext {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0px;
+}

@@ -1,0 +1,22 @@
+/* CSS */
+.code-snippet {
+  margin-bottom: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+.snippet-title {
+  font-size: 24px;
+  color: #333;
+  margin: 1rem 0px;
+}
+
+.code-block {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  overflow-x: auto;
+  line-height: 1.5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,17 @@
+.navbar-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 2rem 10px 2rem;
+}
+
+.navbar-Login-button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+.navbar-Login-button a {
+  text-decoration: none;
+}

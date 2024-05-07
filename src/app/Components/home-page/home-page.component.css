@@ -1,0 +1,38 @@
+/* CSS */
+.code-bin {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0.5rem 0px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.empty-message {
+  font-size: 18px;
+  color: #999;
+}
+
+.code-link {
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.code-link:hover {
+  text-decoration: underline;
+}
+.code-bin-second {
+  width: 90%;
+  padding: 1rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+  border-radius: 10px;
+  margin: auto;
+}

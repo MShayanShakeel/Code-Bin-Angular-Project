@@ -1,0 +1,29 @@
+<div>
+    <nav class="navbar-main">
+        <div>
+            <a routerLink="/" routerLinkActive="active">
+                <h1>Logo</h1>
+            </a>
+
+        </div>
+        <div class="navbar-Login-button">
+            <span>
+
+                <a routerLink="/bin" routerLinkActive="active">
+                    <h3>Create Bin</h3>
+                </a>
+                @if (authService.isAuthenticated()) {
+                <h3 (click)="authService.logoutUser()">LogOut</h3>
+                }@else {
+                <a routerLink="/login" routerLinkActive="active">
+                    <h3>Login</h3>
+                </a>
+                <a routerLink="/singup" routerLinkActive="active">
+                    <h3>Sing up</h3>
+                </a>
+                }
+            </span>
+        </div>
+    </nav>
+    <hr />
+</div>

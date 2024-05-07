@@ -1,0 +1,15 @@
+<div class="code-bin">
+    <h1>All Code Bin</h1>
+    <div class="code-bin-second">
+        <ul>
+            @if (items.length == 0) {
+            <li class="empty-message">Code Bin Is Empty</li>
+            }
+            @for (item of items; track item.id) {
+            <a [routerLink]="['/singleBin' , item.id]" class="code-link">
+                <li>{{item.title}}</li>
+            </a>
+            }
+        </ul>
+    </div>
+</div>

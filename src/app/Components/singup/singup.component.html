@@ -1,0 +1,25 @@
+<div class="form-container">
+    <div class="form-wrapper">
+        <h1>My Awesome SingUp Page</h1>
+        <form #registerForm="ngForm">
+
+            <input type="text" class="form-control input_user" placeholder="email" required ngModel #email="ngModel"
+                name="email" pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" />
+
+            <input type="password" class="form-control input_pass" placeholder="password" name="password" required
+                ngModel #password="ngModel" minlength="6">
+
+            <p class="red-text" [hidden]="password.valid || password.untouched">Password is required and
+                must br greater then 6</p>
+
+            <button type="button" name="button" class="btn login_btn" [disabled]="registerForm.invalid"
+                (click)="register(registerForm)">SingUp</button>
+            <div class="forpassandtext">
+                <div class="d-flex justify-content-center links  ">
+                    If u have already account! <a [routerLink]="['/login']" class="ml-2">Login</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

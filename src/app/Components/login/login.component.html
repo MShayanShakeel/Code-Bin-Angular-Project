@@ -1,0 +1,29 @@
+<div class="form-container">
+    <div class="form-wrapper">
+        <h1>My Awesome Login Page</h1>
+        <form [formGroup]="loginForm">
+
+            <input type="text" class="form-control input_user" placeholder="email" [formControl]="email" />
+
+            <p class="red-text" [hidden]="email.valid || email.untouched">Email is not valid</p>
+
+            <input type="password" class="form-control input_pass" placeholder="password" [formControl]="password">
+            <p class="red-text" [hidden]="password.valid || password.untouched">Password is required and
+                must br greater then 6</p>
+
+
+
+            <button type="button" name="button" class="btn login_btn" [disabled]="loginForm.invalid"
+                (click)="login()">Login</button>
+            <div class="forpassandtext">
+                <div class="d-flex justify-content-center links">
+                    Don't have an account? <a [routerLink]="['/singup']" class="ml-2">Sign Up</a>
+                </div>
+                <div class="d-flex justify-content-center links">
+                    <a href="#">Forgot your password?</a>
+
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
