@@ -15,3 +15,13 @@
 .navbar-Login-button a {
   text-decoration: none;
 }
+.Logo-main a {
+  text-decoration: none;
+  color: #551aa9;
+}
+@media screen and (max-width: 700px) {
+  .navbar-Login-button span {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+}
